@@ -1,0 +1,19 @@
+{
+  "name": "hummy",
+  "version": "0.1.0",
+  "description": "the Discord bot for Backup Potion!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floozutter/hummy.git"
+  },
+  "author": "Floozutter <me@floozutter.site>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Floozutter/hummy/issues"
+  },
+  "homepage": "https://github.com/Floozutter/hummy#readme"
+}
