@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Floozutter/hummy/issues"
   },
-  "homepage": "https://github.com/Floozutter/hummy#readme"
+  "homepage": "https://github.com/Floozutter/hummy#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "typescript": "^4.2.4"
+  }
 }
