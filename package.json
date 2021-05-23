@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Floozutter/hummy#readme",
   "dependencies": {
+    "@types/node": "^15.6.0",
     "discord.js": "^12.5.3",
     "typescript": "^4.2.4"
   }
