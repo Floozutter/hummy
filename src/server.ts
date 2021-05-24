@@ -9,7 +9,6 @@ program
 program.parse();
 const opts = program.opts();
 const token = opts.asfile ? readFileSync(opts.token, "utf8") : opts.token;
-console.log(token);
 
 const client = new Client();
 client.on("ready", () => {
