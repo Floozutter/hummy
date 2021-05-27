@@ -12,7 +12,7 @@ const token = opts.asfile ? readFileSync(opts.token, "utf8") : opts.token;
 
 const client = new Client();
 client.on("ready", () => {
-    console.log(`logged in as ${client.user.tag}.`);
+    console.log(`logged in as ${client.user !== null ? client.user.tag : "???"}.`);
 });
 client.on("message", msg => {
     if (msg.content === ">ping") {
