@@ -13,7 +13,7 @@ const token = opts.asfile ? readFileSync(opts.token, "utf8") : opts.token;
 const prefix = ">";
 
 const client = new Client();
-client.on("ready", () => {
+client.once("ready", () => {
     console.log(`logged in as ${client.user?.tag ?? "???"}.`);
 });
 client.on("message", message => {
