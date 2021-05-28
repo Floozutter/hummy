@@ -10,13 +10,18 @@ program.parse();
 const opts = program.opts();
 const token = opts.asfile ? readFileSync(opts.token, "utf8") : opts.token;
 
+const prefix = ">";
+
 const client = new Client();
 client.on("ready", () => {
     console.log(`logged in as ${client.user !== null ? client.user.tag : "???"}.`);
 });
-client.on("message", msg => {
-    if (msg.content === ">ping") {
-        msg.reply("pong!");
+client.on("message", message => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    const args = message.content.slice(prefix.length).trim().split(' ');
+    const command = args.length ? args.shift()!.toLowerCase() : "";
+    if (command === "ping") {
+        message.reply("ping!");
     }
 });
 client.login(token);
