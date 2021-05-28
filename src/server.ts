@@ -14,7 +14,7 @@ const prefix = ">";
 
 const client = new Client();
 client.on("ready", () => {
-    console.log(`logged in as ${client.user?.tag}.`);
+    console.log(`logged in as ${client.user?.tag ?? "???"}.`);
 });
 client.on("message", message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
